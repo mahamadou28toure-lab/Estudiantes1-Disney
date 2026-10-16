@@ -1,0 +1,1981 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris Magic Plan – Planificación de Viajes a Disneyland Paris</title>
+    <meta
+      name="description"
+      content="Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento, entradas, planes de comidas, vuelos, traslados, restaurantes y espectáculos."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://parismagicplan.com/" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Paris Magic Plan" />
+    <meta property="og:locale" content="es_ES" />
+    <meta
+      property="og:title"
+      content="Paris Magic Plan – Planificación de Viajes a Disneyland Paris"
+    />
+    <meta
+      property="og:description"
+      content="Nosotros lo planificamos. Tú solo tienes que vivir la magia. Planificación personalizada de tu viaje a Disneyland Paris de principio a fin."
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Paris Magic Plan – Planificación de Viajes a Disneyland Paris"
+    />
+    <meta
+      name="twitter:description"
+      content="Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento, entradas, planes de comidas, vuelos, traslados, restaurantes y espectáculos."
+    />
+
+    <!-- Google Fonts: Cormorant Garamond (Display) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hoja de estilos en CSS puro -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Paris Magic Plan",
+        "description": "Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento, entradas, planes de comidas, vuelos, traslados, restaurantes, experiencias con personajes, espectáculos y la organización de tus días en los parques.",
+        "areaServed": "ES",
+        "availableLanguage": ["Spanish"],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Travel Planner personalizado",
+            "description": "Por 200 € planificamos y organizamos tu viaje al completo, adaptándolo a tu familia, tus días, tus prioridades y tu presupuesto.",
+            "price": "200",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Seguro de viaje opcional",
+            "description": "Desde 25 € por persona, con coberturas como asistencia médica, cancelación en los supuestos contemplados en la póliza, equipaje y asistencia 24 horas en español.",
+            "price": "25",
+            "priceCurrency": "EUR"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ========================================================================
+         4. HEADER / MENÚ SUPERIOR
+         ======================================================================== -->
+    <header id="site-header" class="site-header">
+      <div class="site-header__top-bar" aria-hidden="true"></div>
+
+      <div class="container site-header__inner">
+        <!-- Zona 1: Logo Oficial Paris Magic Plan -->
+        <a href="#" aria-label="Paris Magic Plan - Inicio" class="site-header__logo">
+          <img
+            src="assets/images/marca-grafica-pmp-simple-01.svg"
+            alt="Paris Magic Plan"
+            referrerpolicy="no-referrer"
+          />
+        </a>
+
+        <!-- Zona 2: Menú Principal Desktop -->
+        <nav aria-label="Menú principal" class="main-nav">
+          <a href="#reserva-tu-viaje" class="main-nav__link" data-open-modal="plan">
+            Reserva tu viaje
+          </a>
+
+          <!-- Submenú Desplegable: Disneyland Paris -->
+          <div id="nav-dropdown-disneyland" class="nav-dropdown">
+            <button
+              type="button"
+              id="nav-dropdown-trigger"
+              class="nav-dropdown__trigger"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              <span>Disneyland Paris</span>
+              <svg
+                class="nav-dropdown__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+
+            <div role="menu" aria-label="Submenú Disneyland Paris" class="nav-dropdown__menu">
+              <div class="nav-dropdown__card">
+                <a
+                  href="#disneyland-hoteles"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Hoteles"
+                >
+                  <span>Hoteles</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-restaurantes"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Restaurantes"
+                >
+                  <span>Restaurantes</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-personajes"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Personajes"
+                >
+                  <span>Personajes</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-atracciones"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Atracciones"
+                >
+                  <span>Atracciones</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-espectaculos"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Espectáculos"
+                >
+                  <span>Espectáculos</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-adventure-world"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Adventure World"
+                >
+                  <span>Adventure World</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-world-of-frozen"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="World of Frozen"
+                >
+                  <span>World of Frozen</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-viajar-con-ninos"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Viajar con niños"
+                >
+                  <span>Viajar con niños</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-viajar-con-personas-mayores"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Viajar con personas mayores"
+                >
+                  <span>Viajar con personas mayores</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-accesos-preferentes"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Accesos preferentes"
+                >
+                  <span>Accesos preferentes</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+                <a
+                  href="#disneyland-traslados"
+                  role="menuitem"
+                  class="nav-dropdown__item"
+                  data-submenu-topic="Traslados"
+                >
+                  <span>Traslados</span>
+                  <span class="nav-dropdown__dot" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#ventajas" class="main-nav__link">Ventajas</a>
+          <a href="#opiniones" class="main-nav__link">Opiniones</a>
+          <a href="#blog" class="main-nav__link">Blog</a>
+          <a href="#contacto" class="main-nav__link" data-open-modal="question">Contacto</a>
+          <a
+            href="#asistente"
+            class="main-nav__link main-nav__link--chat"
+            data-open-chat
+            style="color: var(--pmp-pink); font-weight: 700"
+          >
+            ✨ Asistente virtual
+          </a>
+        </nav>
+
+        <!-- Zona 3: Acción Principal & Botón Menú Móvil -->
+        <div class="site-header__actions">
+          <div class="site-header__cta-desktop">
+            <button type="button" class="btn-window btn-window--sm" data-open-modal="plan">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Quiero planificar mi viaje</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="btn-window btn-window--sm"
+              data-open-chat
+              aria-label="Abrir asistente virtual"
+            >
+              <span class="btn-window__inner">
+                <span class="btn-window__label">✨ Asistente IA</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+
+          <button
+            type="button"
+            id="mobile-menu-btn"
+            class="mobile-menu-btn"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <svg
+              id="icon-menu-open"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg
+              id="icon-menu-close"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="display: none"
+              aria-hidden="true"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú Desplegable Móvil / Tablet -->
+      <div id="mobile-drawer" class="mobile-drawer">
+        <nav aria-label="Menú móvil" class="container mobile-drawer__nav">
+          <a href="#reserva-tu-viaje" class="mobile-drawer__link" data-open-modal="plan">
+            Reserva tu viaje
+          </a>
+
+          <div>
+            <button
+              type="button"
+              id="mobile-sub-trigger"
+              class="mobile-drawer__sub-trigger"
+              aria-expanded="false"
+            >
+              <span>Disneyland Paris</span>
+              <svg
+                class="nav-dropdown__icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+
+            <div id="mobile-submenu" class="mobile-drawer__submenu">
+              <a href="#disneyland-hoteles" class="mobile-drawer__sublink" data-submenu-topic="Hoteles">Hoteles</a>
+              <a href="#disneyland-restaurantes" class="mobile-drawer__sublink" data-submenu-topic="Restaurantes">Restaurantes</a>
+              <a href="#disneyland-personajes" class="mobile-drawer__sublink" data-submenu-topic="Personajes">Personajes</a>
+              <a href="#disneyland-atracciones" class="mobile-drawer__sublink" data-submenu-topic="Atracciones">Atracciones</a>
+              <a href="#disneyland-espectaculos" class="mobile-drawer__sublink" data-submenu-topic="Espectáculos">Espectáculos</a>
+              <a href="#disneyland-adventure-world" class="mobile-drawer__sublink" data-submenu-topic="Adventure World">Adventure World</a>
+              <a href="#disneyland-world-of-frozen" class="mobile-drawer__sublink" data-submenu-topic="World of Frozen">World of Frozen</a>
+              <a href="#disneyland-viajar-con-ninos" class="mobile-drawer__sublink" data-submenu-topic="Viajar con niños">Viajar con niños</a>
+              <a href="#disneyland-viajar-con-personas-mayores" class="mobile-drawer__sublink" data-submenu-topic="Viajar con personas mayores">Viajar con personas mayores</a>
+              <a href="#disneyland-accesos-preferentes" class="mobile-drawer__sublink" data-submenu-topic="Accesos preferentes">Accesos preferentes</a>
+              <a href="#disneyland-traslados" class="mobile-drawer__sublink" data-submenu-topic="Traslados">Traslados</a>
+            </div>
+          </div>
+
+          <a href="#ventajas" class="mobile-drawer__link" data-close-mobile>Ventajas</a>
+          <a href="#opiniones" class="mobile-drawer__link" data-close-mobile>Opiniones</a>
+          <a href="#blog" class="mobile-drawer__link" data-close-mobile>Blog</a>
+          <a href="#contacto" class="mobile-drawer__link" data-open-modal="question">Contacto</a>
+
+          <div class="mobile-drawer__ctas">
+            <button type="button" class="btn-window btn-window--md" data-open-modal="plan">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Quiero planificar mi viaje</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+            <button type="button" class="btn-window btn-window--md" data-open-modal="question">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Pregunta cualquier duda</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+            <button type="button" class="btn-window btn-window--md" data-open-chat>
+              <span class="btn-window__inner">
+                <span class="btn-window__label">✨ Asistente virtual</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ======================================================================
+           5. HERO PRINCIPAL
+           ====================================================================== -->
+      <section id="inicio" aria-labelledby="hero-heading" class="hero-section">
+        <div class="section-bg-media">
+          <img
+            src="assets/images/hero-castle.jpg"
+            alt="Castillo de Disneyland Paris iluminado al anochecer"
+            loading="eager"
+            fetchpriority="high"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="section-scrim" aria-hidden="true"></div>
+
+        <div class="hero-section__content reveal is-visible">
+          <div class="accent-bar accent-bar--center accent-bar--pink" aria-hidden="true"></div>
+
+          <h1 id="hero-heading" class="hero-section__title">
+            Tu viaje a Disneyland Paris empieza aquí.
+          </h1>
+
+          <p class="hero-section__subtitle">
+            Nosotros lo planificamos. Tú solo tienes que vivir la magia.
+          </p>
+
+          <p class="hero-section__text">
+            Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento, entradas,
+            planes de comidas, vuelos, traslados, restaurantes, experiencias con personajes,
+            espectáculos y la organización de tus días en los parques.
+          </p>
+
+          <div class="cta-group">
+            <button type="button" class="btn-window btn-window--lg" data-open-modal="plan">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Quiero planificar mi viaje</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+
+            <button type="button" class="btn-window btn-window--lg" data-open-modal="question">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Pregunta cualquier duda</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+
+            <button type="button" class="btn-window btn-window--lg" data-open-chat>
+              <span class="btn-window__inner">
+                <span class="btn-window__label">✨ Asistente virtual</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           6. CONCEPTOS DESTACADOS
+           ====================================================================== -->
+      <section aria-label="Conceptos destacados" class="concepts-section bg-pmp-corporate">
+        <div class="container">
+          <div class="concepts-grid">
+            <!-- Concepto 1 -->
+            <div class="concept-card reveal">
+              <div class="concept-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <h2 class="concept-card__title">Planificación personalizada</h2>
+            </div>
+
+            <!-- Concepto 2 -->
+            <div class="concept-card reveal">
+              <div class="concept-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <h2 class="concept-card__title">Reserva a través de agencia</h2>
+            </div>
+
+            <!-- Concepto 3 -->
+            <div class="concept-card reveal">
+              <div class="concept-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path>
+                  <path d="M7 7h.01"></path>
+                </svg>
+              </div>
+              <h2 class="concept-card__title">Precio oficial Disney</h2>
+            </div>
+
+            <!-- Concepto 4 -->
+            <div class="concept-card reveal">
+              <div class="concept-card__icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                  <path d="M5 3v4"></path>
+                  <path d="M19 17v4"></path>
+                  <path d="M3 5h4"></path>
+                  <path d="M17 19h4"></path>
+                </svg>
+              </div>
+              <h2 class="concept-card__title">Asesoramiento antes y durante tu viaje</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           7. SECCIÓN TEXTO EXPLICATIVO
+           ====================================================================== -->
+      <section aria-label="Resumen de planificación" class="explanatory-section">
+        <div class="container container--narrow reveal">
+          <div class="explanatory-section__symbol">
+            <img
+              src="assets/images/marca-grafica-pmp-simbolo-01.svg"
+              alt="Símbolo Paris Magic Plan"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+
+          <p class="explanatory-section__text">
+            Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento, entradas,
+            planes de comida, vuelos, traslados, restaurantes, personajes, espectáculos y
+            organización de tus días en los parques.
+          </p>
+
+          <div class="cta-group">
+            <button type="button" class="btn-window btn-window--lg" data-open-modal="plan">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Quiero planificar mi viaje</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+
+            <button type="button" class="btn-window btn-window--lg" data-open-modal="question">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Pregunta cualquier duda</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           8. IMAGEN HORIZONTAL DE ANCHO COMPLETO
+           ====================================================================== -->
+      <section
+        aria-label="El viaje más mágico a Disneyland Paris para ti y tu familia existe, y nosotros lo hacemos posible."
+        class="full-banner"
+      >
+        <div class="section-bg-media">
+          <img
+            src="assets/images/banner-family-magic.jpg"
+            alt="Familia caminando hacia el castillo de Disneyland Paris al atardecer"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="section-scrim" aria-hidden="true"></div>
+        <div class="full-banner__top-line" aria-hidden="true"></div>
+
+        <div class="full-banner__content reveal">
+          <div class="accent-bar accent-bar--center accent-bar--pink" aria-hidden="true"></div>
+          <blockquote class="full-banner__quote">
+            “El viaje más mágico a Disneyland Paris para ti y tu familia existe, y nosotros lo
+            hacemos posible.”
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           9. SECCIÓN PRINCIPAL DE PLANIFICACIÓN
+           ====================================================================== -->
+      <section
+        id="disneyland-paris"
+        aria-labelledby="main-planning-heading"
+        class="planning-section"
+      >
+        <div class="container">
+          <div class="planning-grid">
+            <div class="planning-copy reveal">
+              <div class="accent-bar" aria-hidden="true"></div>
+
+              <h2 id="main-planning-heading" class="section-title">
+                Planificamos tu viaje a Disneyland Paris de principio a fin.
+              </h2>
+
+              <p class="planning-copy__lead">
+                Te acompañamos desde el momento en que empiezas a soñarlo hasta que llegas al
+                Castillo, para que disfrutes de la experiencia sin preocuparte por toda la
+                planificación que hay detrás.
+              </p>
+
+              <div class="planning-copy__divider">
+                <h3 class="planning-copy__subtitle">
+                  Un viaje a Disneyland Paris no es solo reservar un hotel y unas entradas.
+                </h3>
+
+                <p class="planning-copy__body">
+                  Hay que elegir fechas, hotel, plan de comidas, vuelos, traslados, restaurantes,
+                  experiencias, atracciones y espectáculos; organizar cada día y conseguir que todo
+                  encaje para aprovechar al máximo vuestro tiempo, vuestro presupuesto y todo lo que
+                  Disneyland Paris puede ofreceros.
+                </p>
+              </div>
+            </div>
+
+            <div class="planning-media reveal">
+              <div class="planning-media-card">
+                <img
+                  src="assets/images/planning-detail.jpg"
+                  alt="Planificación detallada de itinerario para Disneyland Paris"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  class="planning-media-card__photo"
+                />
+                <div class="planning-media-card__badge">
+                  <img
+                    src="assets/images/marca-grafica-pmp-simple-04.svg"
+                    alt="Paris Magic Plan"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           10. SECCIÓN VENTAJAS (10 Tarjetas Exactas)
+           ====================================================================== -->
+      <section id="ventajas" aria-labelledby="advantages-heading" class="advantages-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-header__symbol">
+              <img
+                src="assets/images/marca-grafica-pmp-simbolo-01.svg"
+                alt=""
+                aria-hidden="true"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <h2 id="advantages-heading" class="section-title">
+              Tú sueñas el viaje. Nosotros hacemos que todo encaje.
+            </h2>
+          </div>
+
+          <div class="advantages-grid">
+            <!-- Ventaja 01 (Destacada Corporativa) -->
+            <article class="advantage-card advantage-card--wide advantage-card--corporate bg-pmp-corporate reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">01</span>
+              </div>
+              <h3 class="advantage-card__title">Travel Planner personalizado</h3>
+              <p class="advantage-card__desc">
+                Por 200 € planificamos y organizamos tu viaje al completo, adaptándolo a tu familia,
+                tus días, tus prioridades y tu presupuesto.
+              </p>
+            </article>
+
+            <!-- Ventaja 02 -->
+            <article class="advantage-card advantage-card--wide reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M15 9.354a4 4 0 1 0 0 5.292"></path>
+                    <path d="M8 10.5h5"></path>
+                    <path d="M8 13.5h5"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">02</span>
+              </div>
+              <h3 class="advantage-card__title">El mismo precio de Disneyland Paris</h3>
+              <p class="advantage-card__desc">
+                Tu paquete de hotel + entradas + plan de comidas mantiene el precio disponible de
+                Disneyland Paris en el momento de formalizar la reserva. Tú pagas nuestro servicio de
+                planificación, no un sobreprecio sobre el paquete Disney.
+              </p>
+            </article>
+
+            <!-- Ventaja 03 -->
+            <article class="advantage-card reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"></path>
+                    <path d="M18 11V4H6v7"></path>
+                    <path d="M15 22v-4a3 3 0 0 0-3-3v0a3 3 0 0 0-3 3v4"></path>
+                    <path d="M22 11V9"></path>
+                    <path d="M2 11V9"></path>
+                    <path d="M6 4V2"></path>
+                    <path d="M18 4V2"></path>
+                    <path d="M10 4V2"></path>
+                    <path d="M14 4V2"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">03</span>
+              </div>
+              <h3 class="advantage-card__title">Conocemos Disneyland Paris</h3>
+              <p class="advantage-card__desc">
+                Hoteles, parques, atracciones, espectáculos, restaurantes, personajes y
+                experiencias. Te ayudamos a decidir qué merece la pena para vuestro viaje.
+              </p>
+            </article>
+
+            <!-- Ventaja 04 -->
+            <article class="advantage-card reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                    <path d="M7 2v20"></path>
+                    <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">04</span>
+              </div>
+              <h3 class="advantage-card__title">Tus restaurantes, organizados y reservados</h3>
+              <p class="advantage-card__desc">
+                Te recomendamos dónde comer según tus gustos y planificación, preparamos tu
+                calendario de comidas y gestionamos las reservas disponibles de restaurantes y
+                experiencias con personajes.
+              </p>
+            </article>
+
+            <!-- Ventaja 05 -->
+            <article class="advantage-card reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                    <path d="M12 18h.01"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">05</span>
+              </div>
+              <h3 class="advantage-card__title">Te enseñamos a utilizar la app</h3>
+              <p class="advantage-card__desc">
+                Te ayudamos a configurar y vincular tu reserva y a entender las herramientas
+                digitales que necesitarás antes y durante el viaje.
+              </p>
+            </article>
+
+            <!-- Ventaja 06 -->
+            <article class="advantage-card reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
+                    <path d="M16 2v4"></path>
+                    <path d="M8 2v4"></path>
+                    <path d="M3 10h5"></path>
+                    <path d="M17.5 17.5 16 16.3V14"></path>
+                    <circle cx="16" cy="16" r="6"></circle>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">06</span>
+              </div>
+              <h3 class="advantage-card__title">Un plan para aprovechar cada día</h3>
+              <p class="advantage-card__desc">
+                Qué parque visitar, cuándo ir a determinadas atracciones, cómo organizar los
+                espectáculos, dónde verlos y cómo aprovechar mejor vuestro tiempo sin hacer colas de
+                más.
+              </p>
+            </article>
+
+            <!-- Ventaja 07 -->
+            <article class="advantage-card reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                    <path d="M10 6h4"></path>
+                    <path d="M10 10h4"></path>
+                    <path d="M10 14h4"></path>
+                    <path d="M10 18h4"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">07</span>
+              </div>
+              <h3 class="advantage-card__title">Reserva gestionada por una agencia de viajes</h3>
+              <p class="advantage-card__desc">
+                Trabajamos con una agencia especializada que formaliza las reservas que hemos
+                preparado contigo: paquete Disney, vuelos y traslados, sin añadir gastos de gestión
+                de agencia a tu reserva.
+              </p>
+            </article>
+
+            <!-- Ventaja 08 -->
+            <article class="advantage-card reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.93 4.93 4.24 4.24"></path>
+                    <path d="m14.83 9.17 4.24-4.24"></path>
+                    <path d="m14.83 14.83 4.24 4.24"></path>
+                    <path d="m9.17 14.83-4.24 4.24"></path>
+                    <circle cx="12" cy="12" r="4"></circle>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">08</span>
+              </div>
+              <h3 class="advantage-card__title">Asistencia ante incidencias</h3>
+              <p class="advantage-card__desc">
+                Tendrás el respaldo de la agencia para gestionar modificaciones, cancelaciones o
+                incidencias relacionadas con las reservas contratadas a través de ella.
+              </p>
+            </article>
+
+            <!-- Ventaja 09 -->
+            <article class="advantage-card advantage-card--wide reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">09</span>
+              </div>
+              <h3 class="advantage-card__title">Seguro de viaje opcional</h3>
+              <p class="advantage-card__desc">
+                Desde 25 € por persona, con coberturas como asistencia médica, cancelación en los
+                supuestos contemplados en la póliza, equipaje y asistencia 24 horas en español.
+              </p>
+            </article>
+
+            <!-- Ventaja 10 (Destacada Corporativa) -->
+            <article class="advantage-card advantage-card--wide advantage-card--corporate bg-pmp-corporate reveal">
+              <div class="advantage-card__top">
+                <div class="advantage-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                    <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                    <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                  </svg>
+                </div>
+                <span class="advantage-card__index" aria-hidden="true">10</span>
+              </div>
+              <h3 class="advantage-card__title">Reserva ahora y paga poco a poco</h3>
+              <p class="advantage-card__desc">
+                Confirma tu viaje desde 400 € y completa los pagos cómo prefieras desde la
+                plataforma de la agencia hasta 30 días antes de viajar. Los vuelos se abonan al
+                realizar su reserva.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           11. SECCIÓN ¿CÓMO FUNCIONA?
+           ====================================================================== -->
+      <section
+        id="como-funciona"
+        aria-labelledby="how-it-works-heading"
+        class="steps-section bg-pmp-corporate"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="accent-bar accent-bar--center accent-bar--pink" aria-hidden="true"></div>
+            <h2 id="how-it-works-heading" class="section-title section-title--white" style="margin-top: 1rem">
+              ¿Cómo funciona Paris Magic Plan?
+            </h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card reveal">
+              <span class="step-card__badge" aria-hidden="true">1</span>
+              <h3 class="step-card__title">1. Cuéntanos cómo imaginas tu viaje</h3>
+              <p class="step-card__desc">Fechas, viajeros, edades, preferencias y presupuesto.</p>
+            </div>
+
+            <div class="step-card reveal">
+              <span class="step-card__badge" aria-hidden="true">2</span>
+              <h3 class="step-card__title">2. Diseñamos tu viaje</h3>
+              <p class="step-card__desc">
+                Hotel, entradas, comidas, vuelos, traslados y presupuesto completo.
+              </p>
+            </div>
+
+            <div class="step-card reveal">
+              <span class="step-card__badge" aria-hidden="true">3</span>
+              <h3 class="step-card__title">3. La agencia formaliza tus reservas</h3>
+              <p class="step-card__desc">
+                Una vez elegido el viaje, se realizan las reservas correspondientes.
+              </p>
+            </div>
+
+            <div class="step-card reveal">
+              <span class="step-card__badge" aria-hidden="true">4</span>
+              <h3 class="step-card__title">4. Preparamos vuestra experiencia</h3>
+              <p class="step-card__desc">
+                Restaurantes, personajes, app, itinerarios, atracciones, espectáculos y todos los
+                detalles para disfrutar de los parques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           12. OPINIONES
+           ====================================================================== -->
+      <section id="opiniones" aria-labelledby="testimonials-heading" class="testimonials-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="accent-bar accent-bar--center" aria-hidden="true"></div>
+            <h2 id="testimonials-heading" class="section-title" style="margin-top: 1rem">
+              Familias que ya han vivido la magia con nosotros
+            </h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Testimonio 1 -->
+            <article class="testimonial-card reveal">
+              <div>
+                <div class="testimonial-card__media">
+                  <img
+                    src="assets/images/banner-family-magic.jpg"
+                    alt="Fotografía representativa de familia en Disneyland Paris - Testimonio 1"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="testimonial-card__body">
+                  <div class="testimonial-card__stars" aria-label="Valoración de 5 sobre 5 estrellas">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <blockquote class="testimonial-card__quote">
+                    “[Espacio reservado para opinión real de cliente #1. Sustituir por el testimonio
+                    verificado proporcionado por Paris Magic Plan.]”
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial-card__footer">
+                [Placeholder Testimonio 1 — Nombre de la familia]
+              </div>
+            </article>
+
+            <!-- Testimonio 2 -->
+            <article class="testimonial-card reveal">
+              <div>
+                <div class="testimonial-card__media">
+                  <img
+                    src="assets/images/banner-emotional-planning.jpg"
+                    alt="Fotografía representativa de familia en Disneyland Paris - Testimonio 2"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="testimonial-card__body">
+                  <div class="testimonial-card__stars" aria-label="Valoración de 5 sobre 5 estrellas">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <blockquote class="testimonial-card__quote">
+                    “[Espacio reservado para opinión real de cliente #2. Sustituir por el testimonio
+                    verificado proporcionado por Paris Magic Plan.]”
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial-card__footer">
+                [Placeholder Testimonio 2 — Nombre de la familia]
+              </div>
+            </article>
+
+            <!-- Testimonio 3 -->
+            <article class="testimonial-card reveal">
+              <div>
+                <div class="testimonial-card__media">
+                  <img
+                    src="assets/images/hero-castle.jpg"
+                    alt="Fotografía representativa de viaje a Disneyland Paris - Testimonio 3"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="testimonial-card__body">
+                  <div class="testimonial-card__stars" aria-label="Valoración de 5 sobre 5 estrellas">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <blockquote class="testimonial-card__quote">
+                    “[Espacio reservado para opinión real de cliente #3. Sustituir por el testimonio
+                    verificado proporcionado por Paris Magic Plan.]”
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial-card__footer">
+                [Placeholder Testimonio 3 — Nombre de la familia]
+              </div>
+            </article>
+
+            <!-- Testimonio 4 -->
+            <article class="testimonial-card reveal">
+              <div>
+                <div class="testimonial-card__media">
+                  <img
+                    src="assets/images/planning-detail.jpg"
+                    alt="Fotografía representativa de planificación de viaje - Testimonio 4"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="testimonial-card__body">
+                  <div class="testimonial-card__stars" aria-label="Valoración de 5 sobre 5 estrellas">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <blockquote class="testimonial-card__quote">
+                    “[Espacio reservado para opinión real de cliente #4. Sustituir por el testimonio
+                    verificado proporcionado por Paris Magic Plan.]”
+                  </blockquote>
+                </div>
+              </div>
+              <div class="testimonial-card__footer">
+                [Placeholder Testimonio 4 — Nombre de la familia]
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           13. SEGUNDA IMAGEN HORIZONTAL
+           ====================================================================== -->
+      <section
+        aria-label="La magia de Disneyland Paris no empieza cuando llegas al parque. Empieza cuando planificas tu viaje."
+        class="full-banner"
+      >
+        <div class="section-bg-media">
+          <img
+            src="assets/images/banner-emotional-planning.jpg"
+            alt="Familia observando las luces de Disneyland Paris al anochecer"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="section-scrim" aria-hidden="true"></div>
+        <div class="full-banner__top-line" aria-hidden="true"></div>
+
+        <div class="full-banner__content reveal">
+          <div class="accent-bar accent-bar--center accent-bar--pink" aria-hidden="true"></div>
+          <blockquote class="full-banner__quote">
+            “La magia de Disneyland Paris no empieza cuando llegas al parque. Empieza cuando
+            planificas tu viaje.”
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           14. BLOG
+           ====================================================================== -->
+      <section id="blog" aria-labelledby="blog-heading" class="blog-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="accent-bar accent-bar--center" aria-hidden="true"></div>
+            <h2 id="blog-heading" class="section-title" style="margin-top: 1rem">
+              Todo lo que necesitas saber antes de viajar a Disneyland Paris
+            </h2>
+          </div>
+
+          <div class="blog-grid">
+            <!-- Artículo 1 -->
+            <article class="blog-card reveal">
+              <div>
+                <div class="blog-card__media">
+                  <img
+                    src="assets/images/hero-castle.jpg"
+                    alt="Castillo de Disneyland Paris al anochecer"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span>Planificación · [Categoría CMS]</span>
+                    <span aria-hidden="true">·</span>
+                    <time>[Fecha de publicación]</time>
+                  </div>
+                  <h3 class="blog-card__title">
+                    [Placeholder Artículo #1 — Título del artículo del blog desde CMS]
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    [Extracto del artículo #1 pendiente de publicación desde el gestor de contenidos
+                    (CMS). Espacio preparado para mostrar el resumen editorial.]
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card__footer">
+                <button
+                  type="button"
+                  class="btn-window btn-window--sm"
+                  data-blog-article
+                  data-blog-title="[Placeholder Artículo #1 — Título del artículo del blog desde CMS]"
+                  data-blog-meta="Planificación · [Categoría CMS] · [Fecha de publicación]"
+                  data-blog-excerpt="[Extracto del artículo #1 pendiente de publicación desde el gestor de contenidos (CMS). Espacio preparado para mostrar el resumen editorial.]"
+                >
+                  <span class="btn-window__inner">
+                    <span class="btn-window__label">Leer artículo</span>
+                    <span class="btn-window__sill" aria-hidden="true"></span>
+                  </span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="blog-card reveal">
+              <div>
+                <div class="blog-card__media">
+                  <img
+                    src="assets/images/planning-detail.jpg"
+                    alt="Planificación personalizada de itinerario y restaurantes"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span>Guía del parque · [Categoría CMS]</span>
+                    <span aria-hidden="true">·</span>
+                    <time>[Fecha de publicación]</time>
+                  </div>
+                  <h3 class="blog-card__title">
+                    [Placeholder Artículo #2 — Título del artículo del blog desde CMS]
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    [Extracto del artículo #2 pendiente de publicación desde el gestor de contenidos
+                    (CMS). Espacio preparado para mostrar el resumen editorial.]
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card__footer">
+                <button
+                  type="button"
+                  class="btn-window btn-window--sm"
+                  data-blog-article
+                  data-blog-title="[Placeholder Artículo #2 — Título del artículo del blog desde CMS]"
+                  data-blog-meta="Guía del parque · [Categoría CMS] · [Fecha de publicación]"
+                  data-blog-excerpt="[Extracto del artículo #2 pendiente de publicación desde el gestor de contenidos (CMS). Espacio preparado para mostrar el resumen editorial.]"
+                >
+                  <span class="btn-window__inner">
+                    <span class="btn-window__label">Leer artículo</span>
+                    <span class="btn-window__sill" aria-hidden="true"></span>
+                  </span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="blog-card reveal">
+              <div>
+                <div class="blog-card__media">
+                  <img
+                    src="assets/images/banner-emotional-planning.jpg"
+                    alt="Experiencia en familia en Disneyland Paris"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span>Viaje en familia · [Categoría CMS]</span>
+                    <span aria-hidden="true">·</span>
+                    <time>[Fecha de publicación]</time>
+                  </div>
+                  <h3 class="blog-card__title">
+                    [Placeholder Artículo #3 — Título del artículo del blog desde CMS]
+                  </h3>
+                  <p class="blog-card__excerpt">
+                    [Extracto del artículo #3 pendiente de publicación desde el gestor de contenidos
+                    (CMS). Espacio preparado para mostrar el resumen editorial.]
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card__footer">
+                <button
+                  type="button"
+                  class="btn-window btn-window--sm"
+                  data-blog-article
+                  data-blog-title="[Placeholder Artículo #3 — Título del artículo del blog desde CMS]"
+                  data-blog-meta="Viaje en familia · [Categoría CMS] · [Fecha de publicación]"
+                  data-blog-excerpt="[Extracto del artículo #3 pendiente de publicación desde el gestor de contenidos (CMS). Espacio preparado para mostrar el resumen editorial.]"
+                >
+                  <span class="btn-window__inner">
+                    <span class="btn-window__label">Leer artículo</span>
+                    <span class="btn-window__sill" aria-hidden="true"></span>
+                  </span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           15. PREGUNTAS FRECUENTES (FAQ)
+           ====================================================================== -->
+      <section id="preguntas-frecuentes" aria-labelledby="faq-heading" class="faq-section">
+        <div class="container container--narrow">
+          <div class="section-header reveal">
+            <div class="accent-bar accent-bar--center" aria-hidden="true"></div>
+            <h2 id="faq-heading" class="section-title" style="margin-top: 1rem">
+              Preguntas frecuentes
+            </h2>
+          </div>
+
+          <div class="faq-list">
+            <!-- FAQ 1 (Abierto por defecto) -->
+            <div class="faq-item is-open reveal">
+              <h3>
+                <button type="button" class="faq-item__trigger" aria-expanded="true">
+                  <span>[Placeholder Pregunta Frecuente #1 — Pendiente de incorporar por el cliente]</span>
+                  <svg
+                    class="faq-item__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-item__panel">
+                [Espacio preparado para la respuesta oficial #1 de Paris Magic Plan. Estructura
+                editable preparada para incorporar el texto definitivo.]
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item reveal">
+              <h3>
+                <button type="button" class="faq-item__trigger" aria-expanded="false">
+                  <span>[Placeholder Pregunta Frecuente #2 — Pendiente de incorporar por el cliente]</span>
+                  <svg
+                    class="faq-item__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-item__panel">
+                [Espacio preparado para la respuesta oficial #2 de Paris Magic Plan. Estructura
+                editable preparada para incorporar el texto definitivo.]
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item reveal">
+              <h3>
+                <button type="button" class="faq-item__trigger" aria-expanded="false">
+                  <span>[Placeholder Pregunta Frecuente #3 — Pendiente de incorporar por el cliente]</span>
+                  <svg
+                    class="faq-item__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-item__panel">
+                [Espacio preparado para la respuesta oficial #3 de Paris Magic Plan. Estructura
+                editable preparada para incorporar el texto definitivo.]
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item reveal">
+              <h3>
+                <button type="button" class="faq-item__trigger" aria-expanded="false">
+                  <span>[Placeholder Pregunta Frecuente #4 — Pendiente de incorporar por el cliente]</span>
+                  <svg
+                    class="faq-item__icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </h3>
+              <div class="faq-item__panel">
+                [Espacio preparado para la respuesta oficial #4 de Paris Magic Plan. Estructura
+                editable preparada para incorporar el texto definitivo.]
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-section__cta reveal">
+            <button type="button" class="btn-window btn-window--md" data-open-modal="question">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Pregunta cualquier duda</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           16. CIERRE DE LA HOME
+           ====================================================================== -->
+      <section
+        id="reserva-tu-viaje"
+        aria-label="Si sueñas con ir a Disneyland Paris nosotros lo hacemos posible."
+        class="full-banner full-banner--closing"
+      >
+        <div class="section-bg-media">
+          <img
+            src="assets/images/closing-night-castle.jpg"
+            alt="Castillo de Disneyland Paris iluminado bajo las estrellas"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="section-scrim" aria-hidden="true"></div>
+        <div class="full-banner__top-line" aria-hidden="true"></div>
+
+        <div class="full-banner__content reveal">
+          <div class="accent-bar accent-bar--center accent-bar--pink" aria-hidden="true"></div>
+
+          <h2 class="full-banner__headline">
+            Si sueñas con ir a Disneyland Paris nosotros lo hacemos posible.
+          </h2>
+
+          <p class="full-banner__sub1">Tu viaje a Disneyland Paris puede empezar hoy.</p>
+
+          <p class="full-banner__sub2">
+            Cuéntanos cómo imaginas vuestro viaje y nosotros empezaremos a darle forma.
+          </p>
+
+          <div class="full-banner__cta">
+            <button type="button" class="btn-window btn-window--lg" data-open-modal="plan">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">QUIERO PLANIFICAR MI VIAJE</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================================
+         24. FOOTER
+         ======================================================================== -->
+    <footer aria-label="Pie de página" class="site-footer bg-pmp-corporate">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Columna 1: Marca Oficial y Descripción -->
+          <div>
+            <div class="footer-brand-badge">
+              <img
+                src="assets/images/marca-grafica-pmp-simbolo-01.svg"
+                alt=""
+                aria-hidden="true"
+                referrerpolicy="no-referrer"
+              />
+              <img
+                src="assets/images/marca-grafica-pmp-simple-04.svg"
+                alt="Paris Magic Plan"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+
+            <p class="footer-desc">
+              Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento,
+              entradas, planes de comidas, vuelos, traslados, restaurantes, experiencias con
+              personajes, espectáculos y la organización de tus días en los parques.
+            </p>
+
+            <div class="footer-ctas">
+              <button type="button" class="btn-window btn-window--sm" data-open-modal="plan">
+                <span class="btn-window__inner">
+                  <span class="btn-window__label">Quiero planificar mi viaje</span>
+                  <span class="btn-window__sill" aria-hidden="true"></span>
+                </span>
+              </button>
+
+              <button type="button" class="btn-window btn-window--sm" data-open-modal="question">
+                <span class="btn-window__inner">
+                  <span class="btn-window__label">Pregunta cualquier duda</span>
+                  <span class="btn-window__sill" aria-hidden="true"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Columna 2: Navegación Principal -->
+          <div>
+            <h3 class="footer-col__title">Navegación</h3>
+            <ul class="footer-links">
+              <li><a href="#reserva-tu-viaje" data-open-modal="plan">Reserva tu viaje</a></li>
+              <li><a href="#disneyland-paris">Disneyland Paris</a></li>
+              <li><a href="#ventajas">Ventajas</a></li>
+              <li><a href="#opiniones">Opiniones</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contacto" data-open-modal="question">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Submenú Disneyland Paris -->
+          <div>
+            <h3 class="footer-col__title">Disneyland Paris</h3>
+            <ul class="footer-links">
+              <li><a href="#disneyland-hoteles" data-submenu-topic="Hoteles">Hoteles</a></li>
+              <li><a href="#disneyland-restaurantes" data-submenu-topic="Restaurantes">Restaurantes</a></li>
+              <li><a href="#disneyland-personajes" data-submenu-topic="Personajes">Personajes</a></li>
+              <li><a href="#disneyland-atracciones" data-submenu-topic="Atracciones">Atracciones</a></li>
+              <li><a href="#disneyland-espectaculos" data-submenu-topic="Espectáculos">Espectáculos</a></li>
+              <li><a href="#disneyland-adventure-world" data-submenu-topic="Adventure World">Adventure World</a></li>
+              <li><a href="#disneyland-world-of-frozen" data-submenu-topic="World of Frozen">World of Frozen</a></li>
+              <li><a href="#disneyland-viajar-con-ninos" data-submenu-topic="Viajar con niños">Viajar con niños</a></li>
+              <li><a href="#disneyland-viajar-con-personas-mayores" data-submenu-topic="Viajar con personas mayores">Viajar con personas mayores</a></li>
+              <li><a href="#disneyland-accesos-preferentes" data-submenu-topic="Accesos preferentes">Accesos preferentes</a></li>
+              <li><a href="#disneyland-traslados" data-submenu-topic="Traslados">Traslados</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto & Redes Sociales (Placeholders identificables) -->
+          <div>
+            <div style="margin-bottom: 1.5rem">
+              <h3 class="footer-col__title">Contacto</h3>
+              <ul class="footer-links">
+                <li class="footer-placeholder-box">[Email de contacto — Pendiente de incorporar]</li>
+                <li class="footer-placeholder-box">[Teléfono / WhatsApp — Pendiente de incorporar]</li>
+                <li class="footer-placeholder-box">[Horario de atención — Pendiente de incorporar]</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer-col__title">Redes sociales</h3>
+              <ul class="footer-links">
+                <li><button type="button" data-open-modal="question">Instagram [Enlace pendiente]</button></li>
+                <li><button type="button" data-open-modal="question">Facebook [Enlace pendiente]</button></li>
+                <li><button type="button" data-open-modal="question">YouTube [Enlace pendiente]</button></li>
+                <li><button type="button" data-open-modal="question">TikTok [Enlace pendiente]</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fila Legal Inferior -->
+        <div class="footer-bottom">
+          <p>© 2026 Paris Magic Plan. Todos los derechos reservados.</p>
+
+          <nav aria-label="Enlaces legales" class="footer-legal-nav">
+            <button
+              type="button"
+              data-legal-link
+              data-legal-id="aviso-legal"
+              data-legal-label="Aviso legal"
+            >
+              Aviso legal
+            </button>
+            <button
+              type="button"
+              data-legal-link
+              data-legal-id="politica-privacidad"
+              data-legal-label="Política de privacidad"
+            >
+              Política de privacidad
+            </button>
+            <button
+              type="button"
+              data-legal-link
+              data-legal-id="politica-cookies"
+              data-legal-label="Política de cookies"
+            >
+              Política de cookies
+            </button>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================================================
+         MODALES INTERACTIVOS (PLANIFICACIÓN / CONTACTO, SUBMENÚ E INFORMACIÓN)
+         ======================================================================== -->
+
+    <!-- Modal 1: Planificación y Contacto -->
+    <div
+      id="modal-planning"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-planning-title"
+      class="modal-backdrop"
+    >
+      <div class="modal-card">
+        <div class="modal-header bg-pmp-corporate">
+          <div class="modal-header__brand">
+            <div class="modal-header__symbol">
+              <img
+                src="assets/images/marca-grafica-pmp-simbolo-01.svg"
+                alt=""
+                aria-hidden="true"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div>
+              <p class="modal-header__kicker">Paris Magic Plan</p>
+              <h2 id="modal-planning-title" class="modal-header__title">
+                Quiero planificar mi viaje
+              </h2>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Cerrar ventana"
+            class="modal-close-btn"
+            data-close-modal
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="modal-tabs">
+          <div class="modal-tabs__bar">
+            <button type="button" id="tab-btn-plan" class="modal-tab-btn is-active">
+              Quiero planificar mi viaje
+            </button>
+            <button type="button" id="tab-btn-question" class="modal-tab-btn">
+              Pregunta cualquier duda
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <!-- Formulario -->
+          <form id="pmp-planning-form" novalidate>
+            <p
+              id="modal-planning-intro"
+              style="font-size: 0.875rem; color: rgba(35, 57, 117, 0.78); margin-bottom: 1rem"
+            >
+              1. Cuéntanos cómo imaginas tu viaje: Fechas, viajeros, edades, preferencias y
+              presupuesto.
+            </p>
+
+            <div id="pmp-form-error" role="alert" class="form-error"></div>
+
+            <div class="form-grid-2">
+              <div>
+                <label for="pmp-name" class="form-label">Nombre completo *</label>
+                <input
+                  id="pmp-name"
+                  type="text"
+                  required
+                  placeholder="Tu nombre"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <label for="pmp-email" class="form-label">Correo electrónico *</label>
+                <input
+                  id="pmp-email"
+                  type="email"
+                  required
+                  placeholder="tu@email.com"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <!-- Campos extra para Planificar Viaje -->
+            <div id="plan-extra-fields" class="form-grid-3">
+              <div>
+                <label for="pmp-dates" class="form-label">Fechas aproximadas</label>
+                <input
+                  id="pmp-dates"
+                  type="text"
+                  placeholder="Ej. Octubre / 4 días"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <label for="pmp-travelers" class="form-label">Viajeros y edades</label>
+                <input
+                  id="pmp-travelers"
+                  type="text"
+                  placeholder="Ej. 2 adultos, 2 niños (6 y 9)"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <label for="pmp-budget" class="form-label">Teléfono o presupuesto</label>
+                <input
+                  id="pmp-budget"
+                  type="text"
+                  placeholder="Opcional"
+                  class="form-input"
+                />
+              </div>
+            </div>
+
+            <!-- Campo extra para Pregunta cualquier duda -->
+            <div id="question-extra-fields" class="form-field" style="display: none">
+              <label for="pmp-phone" class="form-label">Teléfono de contacto (opcional)</label>
+              <input
+                id="pmp-phone"
+                type="tel"
+                placeholder="+34 600 000 000"
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-field">
+              <label id="label-pmp-message" for="pmp-message" class="form-label">
+                Preferencias de hotel, comidas, personajes o detalles de vuestro viaje
+              </label>
+              <textarea
+                id="pmp-message"
+                rows="4"
+                placeholder="Cuéntanos cómo imaginas vuestro viaje y nosotros empezaremos a darle forma..."
+                class="form-textarea"
+              ></textarea>
+            </div>
+
+            <div class="modal-actions">
+              <button type="button" class="btn-window btn-window--md" data-close-modal>
+                <span class="btn-window__inner">
+                  <span class="btn-window__label">Cancelar</span>
+                  <span class="btn-window__sill" aria-hidden="true"></span>
+                </span>
+              </button>
+
+              <button type="submit" class="btn-window btn-window--md">
+                <span class="btn-window__inner">
+                  <span id="submit-btn-label" class="btn-window__label">
+                    Quiero planificar mi viaje
+                  </span>
+                  <span class="btn-window__sill" aria-hidden="true"></span>
+                </span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Estado de Confirmación -->
+          <div id="modal-planning-success" style="display: none; text-align: center; padding: 1.5rem 0">
+            <h3 class="section-title" style="font-size: 1.875rem; margin-bottom: 0.75rem">
+              Solicitud recibida correctamente
+            </h3>
+            <p style="font-size: 1rem; color: rgba(35, 57, 117, 0.85); margin-bottom: 1.5rem">
+              Gracias, <strong id="success-user-name"></strong>. Hemos registrado tus datos (<span
+                id="success-user-email"
+              ></span
+              >) para empezar a darle forma a tu experiencia en Disneyland Paris.
+            </p>
+            <button type="button" class="btn-window btn-window--md" data-close-modal>
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Volver a Paris Magic Plan</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Submenú Disneyland Paris -->
+    <div
+      id="modal-submenu"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="submenu-modal-title"
+      class="modal-backdrop"
+    >
+      <div class="modal-card modal-card--narrow">
+        <div class="modal-header bg-pmp-corporate">
+          <div class="modal-header__brand">
+            <div class="modal-header__symbol">
+              <img
+                src="assets/images/marca-grafica-pmp-simbolo-01.svg"
+                alt=""
+                aria-hidden="true"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div>
+              <p class="modal-header__kicker">Disneyland Paris</p>
+              <h2 id="submenu-modal-title" class="modal-header__title">Hoteles</h2>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Cerrar ventana"
+            class="modal-close-btn"
+            data-close-modal
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="placeholder-notice">
+            [Espacio preparado para el contenido editorial específico de la sección
+            <strong id="submenu-modal-strong">“Hoteles”</strong> dentro del menú Disneyland Paris.]
+          </div>
+
+          <p style="font-size: 1rem; color: rgba(35, 57, 117, 0.85); margin-bottom: 1.5rem">
+            Planificamos contigo cada detalle de tu viaje a Disneyland Paris: alojamiento, entradas,
+            planes de comidas, vuelos, traslados, restaurantes, experiencias con personajes,
+            espectáculos y la organización de tus días en los parques.
+          </p>
+
+          <div class="modal-actions">
+            <button type="button" id="submenu-btn-question" class="btn-window btn-window--md">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Pregunta cualquier duda</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+
+            <button type="button" id="submenu-btn-plan" class="btn-window btn-window--md">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Quiero planificar mi viaje</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Vista Previa Blog y Enlaces Legales -->
+    <div
+      id="modal-info"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="info-modal-title"
+      class="modal-backdrop"
+    >
+      <div class="modal-card modal-card--narrow">
+        <div class="modal-header bg-pmp-corporate">
+          <div>
+            <p id="info-modal-subtitle" class="modal-header__kicker"></p>
+            <h2 id="info-modal-title" class="modal-header__title" style="font-size: 1.5rem"></h2>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Cerrar ventana"
+            class="modal-close-btn"
+            data-close-modal
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div id="info-modal-body" class="placeholder-notice"></div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn-window btn-window--md" data-close-modal>
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Cerrar</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+
+            <button type="button" id="info-btn-plan" class="btn-window btn-window--md">
+              <span class="btn-window__inner">
+                <span class="btn-window__label">Quiero planificar mi viaje</span>
+                <span class="btn-window__sill" aria-hidden="true"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         25. ASISTENTE VIRTUAL IA (CHAT FLOTANTE PARIS MAGIC PLAN)
+         ======================================================================== -->
+    <aside id="pmp-chat-widget" class="chat-widget" aria-label="Asistente virtual Paris Magic Plan">
+      <!-- Botón flotante para abrir/cerrar -->
+      <button
+        type="button"
+        id="chat-toggle-btn"
+        class="chat-toggle-btn"
+        aria-label="Abrir asistente virtual de Paris Magic Plan"
+        aria-expanded="false"
+        aria-controls="chat-window"
+      >
+        <span class="chat-toggle-btn__pulse" aria-hidden="true"></span>
+        <span class="chat-toggle-btn__content">
+          <span class="chat-toggle-btn__avatar" aria-hidden="true">
+            <img src="assets/images/marca-grafica-pmp-simbolo-01.svg" alt="" />
+          </span>
+          <span class="chat-toggle-btn__text">Asistente Virtual</span>
+          <span class="chat-toggle-btn__badge" title="Asistente online"></span>
+        </span>
+      </button>
+
+      <!-- Ventana de conversación del chat -->
+      <div id="chat-window" class="chat-window" role="dialog" aria-modal="false" aria-labelledby="chat-header-title">
+        <!-- Cabecera del chat con degradado corporativo -->
+        <div class="chat-header bg-pmp-corporate">
+          <div class="chat-header__info">
+            <div class="chat-header__avatar">
+              <img
+                src="assets/images/marca-grafica-pmp-simbolo-01.svg"
+                alt=""
+                aria-hidden="true"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div>
+              <div class="chat-header__title-row">
+                <h3 id="chat-header-title" class="chat-header__title">Asistente Paris Magic Plan</h3>
+                <span class="chat-header__tag">IA Oficial</span>
+              </div>
+              <p class="chat-header__status">
+                <span class="chat-header__dot" aria-hidden="true"></span>
+                <span>En línea · Especialista en Disneyland Paris</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="chat-header__actions">
+            <button
+              type="button"
+              id="chat-close-btn"
+              class="chat-header__btn"
+              aria-label="Minimizar asistente"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Alerta informativa de estado (cuando no está configurada la API key o hay error) -->
+        <div id="chat-alert-banner" class="chat-alert-banner" style="display: none;" role="alert">
+          <span id="chat-alert-message"></span>
+        </div>
+
+        <!-- Área de mensajes -->
+        <div id="chat-messages" class="chat-messages" role="log" aria-live="polite">
+          <!-- Mensaje de bienvenida inicial -->
+          <div class="chat-msg chat-msg--assistant">
+            <div class="chat-msg__avatar">
+              <img src="assets/images/marca-grafica-pmp-simbolo-01.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="chat-msg__bubble">
+              <p>¡Hola! ✨ Soy el asistente virtual de <strong>Paris Magic Plan</strong>.</p>
+              <p>Puedo ayudarte a resolver dudas sobre:</p>
+              <ul>
+                <li>Nuestro servicio de <strong>Travel Planner personalizado (200 €)</strong>.</li>
+                <li>Paquetes de hotel + entradas al <strong>precio oficial de Disneyland Paris</strong>.</li>
+                <li>Reserva de restaurantes, personajes y organización diaria sin colas.</li>
+                <li>Pago escalonado desde <strong>400 €</strong> y seguro de viaje opcional.</li>
+              </ul>
+              <p>¿Qué te gustaría saber sobre tu viaje?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preguntas rápidas sugeridas -->
+        <div id="chat-suggestions" class="chat-suggestions" aria-label="Preguntas sugeridas">
+          <p class="chat-suggestions__label">Preguntas frecuentes:</p>
+          <div class="chat-suggestions__chips">
+            <button type="button" class="chat-chip" data-question="¿Cuánto cuesta el servicio de planificación y qué incluye?">
+              ¿Cuánto cuesta y qué incluye?
+            </button>
+            <button type="button" class="chat-chip" data-question="¿Cómo funciona la reserva y la forma de pago a plazos?">
+              ¿Cómo es el pago a plazos?
+            </button>
+            <button type="button" class="chat-chip" data-question="¿Tienen el mismo precio que Disneyland Paris oficial?">
+              ¿Mismo precio oficial Disney?
+            </button>
+            <button type="button" class="chat-chip" data-question="¿Cómo se reservan los restaurantes y comidas con personajes?">
+              ¿Reserva de restaurantes?
+            </button>
+          </div>
+        </div>
+
+        <!-- Indicador de "Escribiendo..." -->
+        <div id="chat-typing-indicator" class="chat-typing" style="display: none;" aria-live="polite">
+          <span class="chat-typing__avatar">
+            <img src="assets/images/marca-grafica-pmp-simbolo-01.svg" alt="" aria-hidden="true" />
+          </span>
+          <div class="chat-typing__bubble">
+            <span class="chat-typing__dot"></span>
+            <span class="chat-typing__dot"></span>
+            <span class="chat-typing__dot"></span>
+          </div>
+          <span class="chat-typing__text">El asistente está consultando...</span>
+        </div>
+
+        <!-- Formulario de entrada -->
+        <form id="chat-form" class="chat-form" novalidate>
+          <div class="chat-form__input-wrapper">
+            <textarea
+              id="chat-input"
+              class="chat-form__textarea"
+              placeholder="Pregunta sobre hoteles, entradas, restaurantes..."
+              rows="1"
+              maxlength="1000"
+              aria-label="Escribe tu mensaje para el asistente"
+            ></textarea>
+            <button
+              type="submit"
+              id="chat-send-btn"
+              class="chat-form__send-btn"
+              aria-label="Enviar pregunta"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+          <div class="chat-form__footer">
+            <span>Paris Magic Plan · Información oficial verificada</span>
+            <span id="chat-char-counter" class="chat-form__counter">0/1000</span>
+          </div>
+        </form>
+      </div>
+    </aside>
+
+    <!-- Script principal en JavaScript puro -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
